@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Alright</title>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+  
+<body>
+ <div class="title">
+      <a href="/" style="text-decoration: none; color:#0C0F4B">
+        <h1>Alright</h1></a>
+
+ </div>
+
+
+ <div class="navbar">
+      
+      <div id="side">
+	      <!-- About Tab-->
+	        <div class="about"  onclick="aboutPopUp()">About
+          <span class="popuptext" class="draggable" id="aboutPop">
+            
+            <div class="decobar">
+              <div class="rectangle"></div>
+              <div id="ellipse"></div>
+              <!-- Statment in About -->
+                <h2>Mission Statment</h2>
+                <p>This is a site that provides aid and encouragement to those who may feel mentally and emotionally drained within today’s online platforms. Alright is a place you can share positive notes and ideas with people and feel a little less alone in this world </p>
+	          </div>
+	        </span>
+	       </div>
+
+       <!-- Share Message Page-->
+       <div class="share"> 
+       	<a href="index.html" style="text-decoration: none; color:#0C0F4B">Share</a>
+       </div>
+
+  	  </div>
+ 
+ </div>
+
+<!-- Share Page -->
+<div class="container">
+
+   <span class="popuptext " id="otherPopup">
+    <main>
+      
+      <form>    
+        <div class="rectangle1"></div>          
+          <h2>Share A Postive Message:</h2>
+            
+            <input id="messageText" type="text" maxlength="100" placeholder="ex. Be Kind">
+              
+              <button id="submit"type="submit">Submit</button>
+      </form>
+
+    <!-- File Messages: But I want to move the output of the message to the home page instead of here 
+
+      I want something where you click on a txt file on the home page and the message someone writes lives their. In the smae manner as the folder hopefully will work.
+
+    -->
+            Messages:
+            <section class="messages">
+              <ul id="messages"></ul>
+            </section>
+        
+
+          </main>
+        </span>
+
+</div>
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+  <script src="lib/airtable.browser.js"></script>
+</body>
+</html>

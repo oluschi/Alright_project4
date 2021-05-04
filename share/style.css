@@ -1,0 +1,202 @@
+@import url('https://fontlibrary.org//face/chicagoflf');
+/*font-family: 'ChicagoFLFRegular';*/
+
+body{
+background:url('img/') ;
+cursor: url('img/'), auto; 
+background-color:#EBF2FF;
+-webkit-animation: fadein 5s; 
+font-family: 'ChicagoFLFRegular';
+}
+
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+.title{
+	font-family: 'ChicagoFLFRegular';
+	text-align: center;
+	color: #0C0F4B;
+	font-size:1.75em;
+	font-weight: 150px;
+}
+
+.navbar{
+text-align: right;
+color: #0C0F4B;
+font-size: 1.5em;
+}
+
+.about { 
+	position: relative; 
+	display: inline-block; 
+	cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.about .popuptext {
+  visibility: hidden;
+  background: #BAC4D8;
+  color: #fff;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  width: 464px;
+  height: 600px;
+  left: -900px;
+  top: 25px;
+  text-align: center;
+  box-shadow: 15px 15px #9CB2DD;
+}
+
+/* Style elements in Mission Statment */
+
+ #ellipse {
+position: absolute;
+width: 17px;
+height: 16px;
+left: 26px;
+margin-top: 58px;
+border-radius: 50px;
+z-index: 3;
+top:-70px;
+}
+.rectangle{
+position: absolute;
+width: 464px;
+height: 6vh;
+top:-25px;
+background: #0C0F4B;
+
+}
+
+/*Inside the About Pop up*/
+h2 {
+	padding-top:30px;
+	font-size: 1.65em;
+}
+
+p {
+	margin:14px;
+	line-height: 1.5em;
+}
+
+/* Toggle this class when clicking on the about class
+ (hide and show the popup) */
+.about .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+.container {
+	
+}
+
+
+.rectangle1{
+position: absolute;
+width: 55vw;
+height: 6vh;
+top:205px;
+background: #9CB2DD;
+
+}
+
+
+form {
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: #0C0F4B;
+  display: inline-block;
+  width: 100%;
+  max-width: 805px;
+  height: 450px;
+  border-radius: 3px;
+  box-shadow: 15px 15px #9CB2DD;
+
+}
+
+form h2{
+	color: white;
+	font-family: 'ChicagoFLFRegular';
+	text-align: center;
+	margin-top:100px;
+}
+input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 80%;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  font-size: 16px;
+  height: 30%;
+}
+
+button .submit {
+  font-size: 16px;
+  border-radius: 20px;
+  background-color: white;
+  cursor: pointer;
+   margin: 1em 0 0;
+  border: 1px solid dark;
+  padding: 0.75em;
+  line-height: 1;
+  border-radius: 2px;
+  font-size: 16px;
+
+}
+
+button:hover {
+}
+
+button:active {
+
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+footer {
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid lightgrey;
+}
+
+footer > a {
+  color: #BBBBBB;
+}
+
+
+code {
+  background-color: #daffff;
+}
+
+
+ /* For mobile phones: */
+@media only screen and (max-width: 800px) {
+ 
+ #side{
+ 	text-align: center;
+ }
+
+ .about  {
+
+}
+}
