@@ -19,17 +19,21 @@
       
       <div id="side">
 	      <!-- About Tab-->
-	      <div class="about"  onclick="aboutPopUp()">About
-          <span class="popuptext"  id="aboutPop">
-	          
-	          <div class="decobar" class="draggable">
-	            <div class="rectangle"></div>
-	            <div id="ellipse"></div>
-	         		<!-- Statment in About -->
-	              <h2>Mission Statment</h2>
-	              <p>This is a site that provides aid and encouragement to those who may feel mentally and emotionally drained within today’s online platforms. Alright is a place you can share positive notes and ideas with people and feel a little less alone in this world </p>
-	          </div>
-	        </span>
+	      <div class="about"   onclick="aboutPopUp()"> About
+	      	
+	      	<div id="dragAbout">
+	          <span class="popuptext"  id="aboutPop" >
+		          
+		          <div class="decobar"  >
+		            <div class="rectangle"></div>
+		            <div id="ellipse"></div>
+		         		<!-- Statment in About -->
+		              <h2>Mission Statment</h2>
+		              <p>This is a site that provides aid and encouragement to those who may feel mentally and emotionally drained within today’s online platforms. Alright is a place you can share positive notes and ideas with people and feel a little less alone in this world </p>
+		          </div>
+		        </span>
+	   		 </div>
+
 	       </div>
 
        <!-- Link to Share Message Page-->
@@ -58,7 +62,8 @@ class="ui-widget-content" onclick="gifPopUp()">
     </span>
     <!--<button >  </button>-->
 </div>
-<!-- blank folders-->
+
+<!-- blank folders: Just for fun!-->
 <div class="draggable" id="happybtn" class="gif"
 class="ui-widget-content" onclick="gifPopUp()">
 	
@@ -72,6 +77,7 @@ class="ui-widget-content" onclick="gifPopUp()">
     <img src="img/blue_file.png">
     <h3> Untitled</h3>
 </div>
+
 <!--Encouragement gif!-->
 <div class="draggable" id="happybtn" class="gif"
 class="ui-widget-content" onclick="gifPopUp()">
@@ -84,7 +90,8 @@ class="ui-widget-content" onclick="gifPopUp()">
 <!--Src-->
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script src="script.js"></script>
   <script src="lib/airtable.browser.js"></script>
+  <script src="messages.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

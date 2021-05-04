@@ -8,8 +8,16 @@ function aboutPopUp() {
 
 // About Draggle function//
 //  var aboutdrag = document.addEventListener("click",function(){ //
+$(document).ready(function(){
+	$( "#dragAbout" ).draggable(); 
+	
+		$("#dragAbout").keydown(function(){	
+  		});
 
-}
+		$("#dragAbout").keyup(function(){
+		});
+});
+};
 
 
 $( function () {

@@ -1,12 +1,15 @@
 @import url('https://fontlibrary.org//face/chicagoflf');
-/*font-family: 'ChicagoFLFRegular';*/
+/*font-family: 'ChicagoFLFRegular';
+	background:url('img/sky.jpg') ;
+*/
 
 body{
-background:url('img/') ;
 cursor: url('img/'), auto; 
 background-color:#EBF2FF;
 -webkit-animation: fadein 5s; 
 font-family: 'ChicagoFLFRegular';
+/* Radial Gradient*/
+  background-image: radial-gradient(#E0FFE3,  #EBF2FF);
 }
 
 
@@ -25,11 +28,20 @@ font-family: 'ChicagoFLFRegular';
 .title:link{
 	text-decoration: none;
 }
+.title h1:hover{
+	/*color:#E0FFE3;*/
+	text-decoration: underline;
+}
+
 .navbar{
 text-align: right;
 color: #0C0F4B;
 font-size: 1.5em;
 }
+
+.about .share :hover{
+	color:#E0FFE3;
+} 
 
 .about { 
 	position: relative; 
@@ -61,10 +73,12 @@ width: 17px;
 height: 16px;
 left: 26px;
 margin-top: 58px;
-border-radius: 50px;
+border-radius: 50%;
 z-index: 3;
 top:-70px;
+background-color: white;
 }
+
 .rectangle{
 position: absolute;
 width: 464px;
@@ -79,9 +93,10 @@ h2 {
 	font-size: 1.65em;
 }
 
-p {
+.decobar p {
 	margin:14px;
 	line-height: 1.5em;
+	font-size:1em;
 }
 
 /* Toggle this class when clicking on the about class
