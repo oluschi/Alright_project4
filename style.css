@@ -1,0 +1,186 @@
+@import url('https://fontlibrary.org//face/chicagoflf');
+/*font-family: 'ChicagoFLFRegular';*/
+
+body{
+background:url('img/') ;
+cursor: url('img/'), auto; 
+background-color:#EBF2FF;
+-webkit-animation: fadein 5s; 
+font-family: 'ChicagoFLFRegular';
+}
+
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+.title{
+	text-align: center;
+	color: #0C0F4B;
+	font-size:1.75em;
+
+}
+.title:link{
+	text-decoration: none;
+}
+.navbar{
+text-align: right;
+color: #0C0F4B;
+font-size: 1.5em;
+}
+
+.about { 
+	position: relative; 
+	display: inline-block; 
+	cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.about .popuptext {
+  visibility: hidden;
+  background: #BAC4D8;
+  color: #fff;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  width: 464px;
+  height: 600px;
+  left: -900px;
+  top: 25px;
+  text-align: center;
+  box-shadow: 15px 15px #9CB2DD;
+}
+
+/* Style elements in Mission Statment */
+
+ #ellipse {
+position: absolute;
+width: 17px;
+height: 16px;
+left: 26px;
+margin-top: 58px;
+border-radius: 50px;
+z-index: 3;
+top:-70px;
+}
+.rectangle{
+position: absolute;
+width: 464px;
+height: 6vh;
+top:-25px;
+background: #0C0F4B;
+}
+
+/*Inside the About Pop up*/
+h2 {
+	padding-top:30px;
+	font-size: 1.65em;
+}
+
+p {
+	margin:14px;
+	line-height: 1.5em;
+}
+
+/* Toggle this class when clicking on the about class
+ (hide and show the popup) */
+.about .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+
+.draggable { 
+	width: 150px;
+	height: 150px; 
+	padding: 0.5em; 
+	cursor: pointer;
+}
+
+#happybtn img{
+	width: 100%;
+	margin-top:-250px;
+
+}
+
+
+#happybtn {
+	text-align: center;
+	color:#9CB2DD;
+	background-color: none;
+	border: none;
+	background: none;
+	font-family: 'ChicagoFLFRegular'
+}
+h3{
+	font-size:1.5em;
+	margin-top:-30px;
+}
+.gif { 
+	position: relative; 
+	display: inline-block; 
+	cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.gif .gifUp {
+  visibility: hidden;
+  background: #BAC4D8;
+  color: #fff;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  width: 464px;
+  height: 600px;
+  left: -900px;
+  top: 25px;
+  text-align: center;
+  box-shadow: 15px 15px #9CB2DD;
+}
+/* Toggle this class when clicking on the gif class
+ (hide and show the popup) */
+.gif .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+
+ /* For mobile phones: */
+@media only screen and (max-width: 800px) {
+ 
+ #side{
+ 	text-align: center;
+ }
+
+ .about .popuptext {
+  width: 464px;
+  height: 300px;
+}
+
+}

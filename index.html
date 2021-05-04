@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Alright</title>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+  
+<body>
+ <div class="title">
+      <a href="index.html" style="text-decoration: none; color:#0C0F4B" ><h1>Alright</h1></a>
+ </div>
+
+
+ <div class="navbar">
+      
+      <div id="side">
+	      <!-- About Tab-->
+	      <div class="about"  onclick="aboutPopUp()">About
+          <span class="popuptext"  id="aboutPop">
+	          
+	          <div class="decobar" class="draggable">
+	            <div class="rectangle"></div>
+	            <div id="ellipse"></div>
+	         		<!-- Statment in About -->
+	              <h2>Mission Statment</h2>
+	              <p>This is a site that provides aid and encouragement to those who may feel mentally and emotionally drained within today’s online platforms. Alright is a place you can share positive notes and ideas with people and feel a little less alone in this world </p>
+	          </div>
+	        </span>
+	       </div>
+
+       <!-- Link to Share Message Page-->
+       <div class="share"> 
+       	<a href="share/index.html" style="text-decoration: none; color:#0C0F4B" >Share</a>
+       </div>
+
+
+  	  </div>
+ 
+ </div>
+
+  <!--Random Surprise Folders -->
+
+  <!-- Gif folder: I want a gif or img to live inside 
+  this folder instead of the outside -->
+<div class="draggable" id="happybtn" class="gif"
+class="ui-widget-content" onclick="gifPopUp()">
+	
+    <img src="img/blue_file.png">
+    <h3> Feeling Sad?</h3>
+
+    <span class="gifUp">
+    	<img src="img/ ">
+
+    </span>
+    <!--<button >  </button>-->
+</div>
+<!-- blank folders-->
+<div class="draggable" id="happybtn" class="gif"
+class="ui-widget-content" onclick="gifPopUp()">
+	
+    <img src="img/blue_file.png">
+    <h3> Untitled</h3>
+</div>
+
+<div class="draggable" id="happybtn" class="gif"
+class="ui-widget-content" onclick="gifPopUp()">
+	
+    <img src="img/blue_file.png">
+    <h3> Untitled</h3>
+</div>
+<!--Encouragement gif!-->
+<div class="draggable" id="happybtn" class="gif"
+class="ui-widget-content" onclick="gifPopUp()">
+	 <span class="gifUp">
+		<iframe src="https://giphy.com/embed/dalJ0CpF7hwmN1nZXe" width=" 120" height="120" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+	</span>	 
+    <h3> You got this!</h3>
+</div>
+
+<!--Src-->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="script.js"></script>
+  <script src="lib/airtable.browser.js"></script>
+</body>
+</html>
