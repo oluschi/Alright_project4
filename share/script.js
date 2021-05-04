@@ -1,10 +1,23 @@
 
 // About Page PopUp //
+// About Page PopUp //
 function aboutPopUp() {
   var about = document.getElementById("aboutPop");
   about.classList.toggle("show");
   //popupAbout.classList.toggle("show");//
-}
+
+// About Draggle function//
+//  var aboutdrag = document.addEventListener("click",function(){ //
+$(document).ready(function(){
+	$( "#dragAbout" ).draggable(); 
+
+		$("#dragAbout").keydown(function(){	
+  		});
+
+		$("#dragAbout").keyup(function(){
+		});
+});
+};
 
 // Share Form PopUp//
 
@@ -53,4 +66,5 @@ document.getElementById('message').addEventListener('submit', (event) => {
 	    }
 	});
 });
+;
 ;
