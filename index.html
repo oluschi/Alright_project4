@@ -51,16 +51,28 @@
   <!-- Gif folder: I want a gif or img to live inside 
   this folder instead of the outside -->
 <div class="draggable" id="happybtn" class="gif"
-class="ui-widget-content" onclick="gifPopUp()">
+class="ui-widget-content" onclick="imgPopUP()">
 	
     <img src="img/blue_file.png">
     <h3> Feeling Sad?</h3>
 
-    <span class="gifUp">
-    	<img src="img/ ">
-
-    </span>
     <!--<button >  </button>-->
+</div>
+
+<!-- Messages From Air Table-->
+<div class="draggable" id="happybtn" class="grid" id="shared"
+class="ui-widget-content" onclick="gifPopUp()">
+	
+    <img src="img/blue_file.png">
+    <h3> Messages</h3>
+
+    <div id="messagepop">
+	  <a>Shared Messages:</a>
+	  <button id="close">Close</button>
+	  <h2 id="messages"></h2>
+	</div>
+
+
 </div>
 
 <!-- blank folders: Just for fun!-->
@@ -71,15 +83,9 @@ class="ui-widget-content" onclick="gifPopUp()">
     <h3> Untitled</h3>
 </div>
 
-<div class="draggable" id="happybtn" class="gif"
-class="ui-widget-content" onclick="gifPopUp()">
-	
-    <img src="img/blue_file.png">
-    <h3> Untitled</h3>
-</div>
-
 <!--Encouragement gif!-->
 <div class="draggable" id="happybtn" class="gif"
+
 class="ui-widget-content" onclick="gifPopUp()">
 	 <span class="gifUp">
 		<iframe src="https://giphy.com/embed/dalJ0CpF7hwmN1nZXe" width=" 120" height="120" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>

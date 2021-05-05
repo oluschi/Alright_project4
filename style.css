@@ -25,9 +25,6 @@ font-family: 'ChicagoFLFRegular';
 	font-size:1.75em;
 
 }
-.title:link{
-	text-decoration: none;
-}
 .title h1:hover{
 	/*color:#E0FFE3;*/
 	text-decoration: underline;
@@ -38,10 +35,9 @@ text-align: right;
 color: #0C0F4B;
 font-size: 1.5em;
 }
-
-.about .share :hover{
-	color:#E0FFE3;
-} 
+#side :hover{
+	text-decoration: underline;
+}
 
 .about { 
 	position: relative; 
@@ -88,6 +84,9 @@ background: #0C0F4B;
 }
 
 /*Inside the About Pop up*/
+#dragAbout{
+	text-decoration: none;
+}
 h2 {
 	padding-top:30px;
 	font-size: 1.65em;
@@ -141,6 +140,7 @@ h2 {
 	background: none;
 	font-family: 'ChicagoFLFRegular'
 }
+
 h3{
 	font-size:1.5em;
 	margin-top:-30px;
@@ -149,6 +149,10 @@ h3{
 	position: relative; 
 	display: inline-block; 
 	cursor: pointer;
+}
+
+#shared { 
+
 }
 
 /* The actual popup (appears on top) */
@@ -194,8 +198,21 @@ h3{
  }
 
  .about .popuptext {
-  width: 464px;
-  height: 300px;
+  width: 300px;
+  height: 450px;
+  top:60px;
+   left: -100px;
 }
+/*Inside the About Pop up*/
+.rectangle{
+position: absolute;
+width: 300px;
+}
+
+.decobar {
+	font-size: .75em;
+}
+
+
 
 }
