@@ -31,34 +31,27 @@ $(document).ready(function(){
 
 /*Share: Message */
 
-/*function myOtherFunction(){
-	var share = document.getElementById("otherPopup");
-  share.classList.toggle("show");*/
+// start of airtable JS 
 
-$(function() {
-  $.get('/messages', function(messages) {
-    messages.forEach(function(message) {
-      $('#messages').append('<li>' + message[0] + '</li>');
-    });
-  });
+// load the airtable library
+var Airtable = require("airtable");
+console.log(Airtable);
 
-  $('form').submit(function(event) {
-    event.preventDefault();
-    var messageText = $('input#messageText').val();
-    $.post('/messages?' + $.param({ messageText: messageText, question: 'the question', answer: 'the answer' }), function() {
-      $('#messages').append('<li>' + messageText + '</li>');
-      $('input#messageText').val('');
-      $('input').focus();
-    });
-  });
-});
+// add your API Key 
+let base = new Airtable({apiKey: "keygEINsXOj57TR6b"}).base("app3J7I3REkUeJGxY");
 
-document.getElementById('message').addEventListener('submit', (event) => {
+
+document.getElementById('submit').addEventListener('click', (event) => {
     event.preventDefault();
 
-	base.create({
-		'Title': document.getElementById('message-title').value,
-		'Message': document.getElementById('message-body').value
+	base("media").create({
+		
+		"message": document.getElementById("messageText").value	
+		
+		
+		/*'Title': document.getElementById('message-title').value,
+		'message': document.getElementById('messageText').value*/
+
 	}, (err, record) => {
     	if (err) {
 	      console.error(err);
@@ -67,4 +60,4 @@ document.getElementById('message').addEventListener('submit', (event) => {
 	});
 });
 ;
-;
+
