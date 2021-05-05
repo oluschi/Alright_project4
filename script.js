@@ -11,7 +11,7 @@ function aboutPopUp() {
 $(document).ready(function(){
 	$( "#dragAbout" ).draggable(); 
 
-		$("#dragAbout").keydown(function(){	
+		$("#dragAbout").keydown(function(){
   		});
 
 		$("#dragAbout").keyup(function(){
@@ -27,9 +27,9 @@ function imgPopUp() {
 // About Draggle function//
 //  var aboutdrag = document.addEventListener("click",function(){ //
 $(document).ready(function(){
-	$( "#dragAbout" ).draggable(); 
+	$( "#dragAbout" ).draggable();
 
-		$("#dragAbout").keydown(function(){	
+		$("#dragAbout").keydown(function(){
   		});
 
 		$("#dragAbout").keyup(function(){
@@ -40,14 +40,14 @@ $(document).ready(function(){
 $( function () {
     $( ".draggable" ).draggable();
   } );
-  
+
 function gifPopUp(){
 	var gif =document.getElementById("gifPop");
 	gif.classList.toggle("show")
 }
 
 // Add Event Listen in Js for Feeling sad to display the gif img//
-//Css on the img is none—(in js) feelingsad.EventListener....img.style.display = “block”;// 
+//Css on the img is none—(in js) feelingsad.EventListener....img.style.display = “block”;//
 
 // Share Form PopUp //
 /*function sharePopUp() {
@@ -56,5 +56,3 @@ function gifPopUp(){
   popupShare.classList.toggle("show");
   console.log("you got to the end of the function!");
 };*/
-
-
