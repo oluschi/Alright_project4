@@ -10,56 +10,67 @@
 </head>
   
 <body>
- <div class="title">
+ <div class="title" id="index.html">
       <a href="../index.html" style="text-decoration: none; color:#0C0F4B">
         <h1>Alright</h1></a>
 
  </div>
 
 
- <div class="navbar">
+<div class="navbar">
       
-      <div id="side">
+    <div id="side">
 	      <!-- About Tab-->
-	        <div class="about"  onclick="aboutPopUp()">About
-            <div id="dragAbout">
-              <span class="popuptext" id="aboutPop">
-                
-                <div class="decobar">
-                  <div class="rectangle"></div>
-                  <div id="ellipse"></div>
-                  <!-- Statment in About -->
-                    <h2>Mission Statment</h2>
-                    <p>This is a site that provides aid and encouragement to those who may feel mentally and emotionally drained within today’s online platforms. Alright is a place you can share positive notes and ideas with people and feel a little less alone in this world </p>
-    	          </div>
-    	        </span>
+      <div class="about"   onclick="aboutPopUp()"> Guidelines
+          
+        <div id="dragAbout">
+          <span class="popuptext"  id="aboutPop" >
+              
+            <div class="decobar"  >
+              <div class="rectangle"></div>
+              <div id="ellipse"></div>
+              <!-- Statment in About -->
+                  <h2>Guidelines</h2>
+                  <p>On Alright we promote positive messages and uplifting words of encouragement. Please retain from using harsh and demeaning language.<br></br>
+                  Once you submit your message return home and check out message folder.
+                  </p>
             </div>
-	       </div>
+          </span>
+        </div>
+
+      </div>
 
        <!-- Share Message Page-->
        <div class="share"> 
-       	<a href="index.html" style="text-decoration: none; color:#0C0F4B">Share</a>
+       	  <a href="index.html" style="text-decoration: none; color:#0C0F4B">Share</a>
        </div>
 
   	  </div>
- 
- </div>
+
+</div>
 
 <!-- Share Page -->
 <div class="container">
 
-   <span class="popuptext " id="otherPopup">
+   <span class="popuptext " id="sharePop">
     <main>
       
-      <form>    
-        <div class="rectangle1"></div>          
+      <form id="shareForm" action="../index.html"> 
+
+        <div class="decobar">
+          <div id="ellipse1"></div>
+          <div class="rectangle1"></div>   
+        </div>       
+
           <h2>Share A Postive Message:</h2>
             
             <input id="messageText" type="text" maxlength="100" placeholder="ex. Be Kind - Jane Doe">
               
-              <button id="submit"type="submit">Submit</button>
+              <button class="clear" id="submit"type="submit">Submit</button>
       </form>
 
+
+ 
     <!-- File Messages: But I want to move the output of the message to the home page instead of here 
 
       I want something where you click on a txt file on the home page and the message someone writes lives their. In the smae manner as the folder hopefully will work.
@@ -79,8 +90,11 @@
 
 
 
-
+<!--Src-->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="lib/airtable.browser.js"></script>
+  <script src="input.js"></script>
   <script src="script.js"></script>
   
 </body>

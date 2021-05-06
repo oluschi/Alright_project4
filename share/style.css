@@ -2,8 +2,8 @@
 /*font-family: 'ChicagoFLFRegular';*/
 
 body{
-background:url('img/') ;
-cursor: url('img/'), auto; 
+/*background:url('img/') ;
+cursor: url('img/'), auto; */
 background-color:#EBF2FF;
 -webkit-animation: fadein 5s; 
 font-family: 'ChicagoFLFRegular';
@@ -34,11 +34,15 @@ text-align: right;
 color: #0C0F4B;
 font-size: 1.5em;
 }
+#side :hover{
+  text-decoration: underline;
+}
 
 .about { 
-	position: relative; 
-	display: inline-block; 
-	cursor: pointer;
+  position: relative; 
+  display: inline-block; 
+  cursor: pointer;
+  text-decoration: none;
 }
 
 /* The actual popup (appears on top) */
@@ -48,46 +52,49 @@ font-size: 1.5em;
   color: #fff;
   padding: 8px 0;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   width: 464px;
-  height: 600px;
+  height: 480px;
   left: -900px;
   top: 25px;
   text-align: center;
   box-shadow: 15px 15px #9CB2DD;
 }
-
+.about:hover{
+text-decoration: none;
+}
 /* Style elements in Mission Statment */
 
  #ellipse {
 position: absolute;
-width: 17px;
-height: 16px;
+width: 24px;
+height: 24px;
 left: 26px;
-margin-top: 58px;
 border-radius: 50%;
 z-index: 3;
-top:-70px;
+top:-15px;
 background-color: white;
 }
+
 .rectangle{
 position: absolute;
 width: 464px;
 height: 6vh;
 top:-25px;
 background: #0C0F4B;
-
 }
 
 /*Inside the About Pop up*/
+#dragAbout{
+  text-decoration: none;
+}
 h2 {
-	padding-top:30px;
-	font-size: 1.65em;
+  padding-top:30px;
+  font-size: 1.65em;
 }
 
-p {
-	margin:14px;
-	line-height: 1.5em;
+p{
+  padding:20px;
 }
 
 /* Toggle this class when clicking on the about class
@@ -95,7 +102,8 @@ p {
 .about .show {
   visibility: visible;
   -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s
+  animation: fadeIn 1s;
+  text-decoration: none;
 }
 
 /* Add animation (fade in the popup) */
@@ -109,17 +117,35 @@ p {
   to {opacity:1 ;}
 }
 
-.container {
-	
+
+.draggable { 
+  width: 150px;
+  height: 150px; 
+  padding: 0.5em; 
+  cursor: pointer;
 }
 
+.container {
+	margin-left:300px;
+}
 
+ #ellipse1 {
+position: absolute;
+width: 27px;
+height: 26px;
+margin-top:-80px;
+border-radius: 50%;
+z-index: 1;
+top:85px;
+background-color: white;
+}
 .rectangle1{
 position: absolute;
-width: 55vw;
+width: 840px;
 height: 6vh;
-top:205px;
+margin-top:-20px;
 background: #9CB2DD;
+margin-left:-15px;
 
 }
 
@@ -138,41 +164,45 @@ form {
 }
 
 form h2{
-	color: white;
+	font-size:2.5em;
+  color: white;
 	font-family: 'ChicagoFLFRegular';
 	text-align: center;
-	margin-top:100px;
+	margin-top:50px;
 }
 input {
   display: block;
   margin-bottom: 10px;
-  padding: 5px;
-  width: 80%;
-  border: 1px solid lightgrey;
+  padding: 15px;
+  width: 95%;
+  border: 1px solid #9CB2DD;
   border-radius: 3px;
-  font-size: 16px;
+  font-size: 20px;
   height: 30%;
+  font-family: 'ChicagoFLFRegular';
+  color:#0C0F4B;
 }
 
-button .submit {
+button {
   font-size: 16px;
   border-radius: 20px;
   background-color: white;
   cursor: pointer;
-   margin: 1em 0 0;
-  border: 1px solid dark;
+  color:#0C0F4B;
+  margin: 1em 0 0;
   padding: 0.75em;
   line-height: 1;
   border-radius: 2px;
-  font-size: 16px;
+  font-family: 'ChicagoFLFRegular';
 
 }
 
-button:hover {
+button :hover {
+  background-color:#E0FFE3;
 }
 
 button:active {
-
+  background-color:#E0FFE3;
 }
 
 li {
@@ -199,10 +229,37 @@ code {
 @media only screen and (max-width: 800px) {
  
  #side{
- 	text-align: center;
+  text-align: center;
  }
 
- .about  {
-
+ .about .popuptext {
+  width: 300px;
+  height: 420px;
+  top:60px;
+  left: -100px;
 }
+/*Inside the About Pop up*/
+.rectangle{
+position: absolute;
+width: 300px;
+}
+
+.decobar {
+  font-size: .75em;
+}
+
+.container {
+  margin-left:0px;
+  margin-top:20px;
+}
+
+.rectangle1{
+position: absolute;
+top:20px;
+}
+ #ellipse1 {
+top:90px;
+}
+
+
 }
